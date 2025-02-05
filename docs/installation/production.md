@@ -2,10 +2,10 @@
 
 These are some pointers to running Nautobot in a production environment:
 
-* Use Highly Available PostgreSQL, while this chart does [provide the ability to do this](../../advanced-features/postgresql-ha/) it is *strongly* recommended to take advantage of a cloud provider's offering where possible.
-* Use Highly Available Redis, today the supported method is to use [Redis Sentinel](../../advanced-features/redis-sentinel/), however cloud providers don't currently provide a Sentinel offering.
+* Use Highly Available PostgreSQL, while this chart does [provide the ability to do this](../../docs/advanced-features/postgresql-ha) it is *strongly* recommended to take advantage of a cloud provider's offering where possible.
+* Use Highly Available Redis, today the supported method is to use [Redis Sentinel](../../docs/advanced-features/redis-sentinel), however cloud providers don't currently provide a Sentinel offering.
 * If you are deploying either PostgreSQL HA or Redis Sentinel, it is recommended to deploy those charts separately simply to avoid dependency confusion and management in the future.
-* Use [existing secrets](../../advanced-features/existing-secrets/) rather than deploying them with helm.
+* Use [existing secrets](../../docs/advanced-features/existing-secrets) rather than deploying them with helm.
 
 When deploying this chart in production, it is recommended to set or at least be aware of the following values:
 
